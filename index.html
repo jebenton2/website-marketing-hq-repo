@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turn Traffic Into Revenue with Data-Driven Web Content. Plan, produce & optimize web content that actually converts.">
+    <meta name="keywords" content="SEO content, web content strategy, content optimization, digital marketing">
+    <meta name="author" content="Website Marketing HQ">
+    <title>Turn Traffic Into Revenue with Data-Driven Web Content</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Announcement Bar -->
+    <section class="bg-slate-100 py-2">
+        <div class="max-w-7xl mx-auto px-4 xl:px-0 flex items-start justify-between gap-x-2 md:items-center">
+            <div class="flex w-full grow flex-col items-start gap-y-2.5 justify-self-center md:flex-row md:items-center md:justify-center md:gap-x-6">
+                <div class="py-0.5 text-sm font-medium text-neutral-700 md:py-0">
+                    Get Started Free
+                </div>
+                <a href="#" title="Buy template" class="items-center justify-center whitespace-nowrap text-sm font-medium transition-all focus:shadow-[0_0px_0px_2px_rgba(15,23,42,0.25),0_2px_10px_0px_rgba(0,0,0,0.05)] shadow-[0_2px_10px_0px_rgba(0,0,0,0.05)] bg-slate-900 text-white hover:bg-slate-800 disabled:bg-slate-900/30 disabled:text-slate-50/70 px-3 py-2 rounded-[0.625rem] flex">
+                    Download Template
+                    <svg class="shrink-0 ml-1.5 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            <button class="flex h-6 w-6 cursor-pointer items-center justify-center rounded-3xl bg-neutral-200 p-1 transition hover:bg-neutral-300" type="button" aria-label="Close bar" id="closeAnnouncementBar">
+                <svg class="h-4 text-neutral-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="images/WMHQ-ICON.webp" alt="WMHQ Icon" class="h-10 w-10">
+                <img src="images/logo.png" alt="Website Marketing HQ Logo" class="h-10 w-auto max-w-xs">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">FAQ</a>
+                <a href="https://websitemarketinghq.com/contact" class="btn-primary">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button class="mobile-menu-button text-gray-700 hover:text-blue-600 transition-colors duration-300 text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white border-b border-gray-200 md:hidden">
+                <div class="flex flex-col space-y-4 px-4 py-6">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Benefits</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">FAQ</a>
+                    <a href="https://websitemarketinghq.com/contact" class="btn-primary text-center">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 md:py-32 lg:py-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight">
+                        Turn Traffic Into Revenue with Data-Driven Web Content
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-700 leading-relaxed font-light">
+                        Plan, produce & optimize web content that actually converts. Transform your website visitors into paying customers with our comprehensive content strategy and optimization platform.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="https://websitemarketinghq.com/contact" class="btn-primary text-center">
+                            <i class="fas fa-rocket mr-2"></i>Start Your Free Strategy Sprint
+                        </a>
+                        <button class="btn-secondary text-center">
+                            <i class="fas fa-play-circle mr-2"></i>Watch Demo
+                        </button>
+                    </div>
+                    <div class="flex items-center space-x-6 pt-8 border-t border-gray-300">
+                        <div>
+                            <p class="text-3xl font-bold text-blue-600">300%</p>
+                            <p class="text-gray-600 text-sm">Average Traffic Increase</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-blue-600">2.5x</p>
+                            <p class="text-gray-600 text-sm">Higher Conversion Rate</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-blue-600">60%</p>
+                            <p class="text-gray-600 text-sm">Time Saved on Production</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="bg-gradient-to-br from-blue-400 to-indigo-600 rounded-2xl shadow-2xl p-8 h-96 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-chart-bar text-6xl mb-4 opacity-80"></i>
+                            <p class="text-lg font-semibold">Data-Driven Content Strategy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="pt-12 lg:pt-16 bg-slate-50 pb-12 lg:pb-16">
+  <div class="max-w-7xl mx-auto px-4 xl:px-0 flex flex-col gap-y-6">
+    <div
+      class="flex items-center gap-x-3 sm:justify-center lg:justify-stretch lg:px-8"
+    >
+      <figure>
+        <svg
+          class="h-6 text-slate-700"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+          data-slot="icon"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634Zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866Zm2.023 6.828a.75.75 0 1 0-1.06-1.06 3.75 3.75 0 0 1-5.304 0 .75.75 0 0 0-1.06 1.06 5.25 5.25 0 0 0 7.424 0Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </figure>
+      <p
+        class="bg-gradient-to-b from-slate-800 to-slate-600 bg-clip-text font-semibold text-transparent"
+      >
+        Design resources for SaaS success
+      </p>
+    </div>
+    <div class="border-b border-b-neutral-200"></div>
+    <div
+      class="grid gap-6 md:grid-cols-2 md:px-4 lg:mt-6 lg:grid-cols-3 lg:px-8"
+    >
+      <article
+        class="flex flex-col items-start sm:mx-auto sm:w-2/3 lg:mx-0 lg:w-4/5 xl:w-2/3"
+      >
+        <figure>
+          <svg
+            class="h-6 text-slate-400 lg:h-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+            data-slot="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm4.5 7.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0v-2.25a.75.75 0 0 1 .75-.75Zm3.75-1.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0V12Zm2.25-3a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 1-1.5 0V9.75A.75.75 0 0 1 13.5 9Zm3.75-1.5a.75.75 0 0 0-1.5 0v9a.75.75 0 0 0 1.5 0v-9Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </figure>
+        <div
+          class="mt-4 font-bold text-neutral-700 md:text-lg lg:mt-6 xl:text-xl"
+        >
+          Advanced Analytics
+        </div>
+        <p class="mt-2 text-sm font-medium text-neutral-500">
+          Goes beyond surface-level data, delving deep into your information to
+          reveal crucial insights.
+        </p>
+      </article>
+      <article
+        class="flex flex-col items-start sm:mx-auto sm:w-2/3 lg:mx-0 lg:w-4/5 xl:w-2/3"
+      >
+        <figure>
+          <svg
+            class="h-6 text-slate-400 lg:h-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+            data-slot="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </figure>
+        <div
+          class="mt-4 font-bold text-neutral-700 md:text-lg lg:mt-6 xl:text-xl"
+        >
+          Seamless Integration
+        </div>
+        <p class="mt-2 text-sm font-medium text-neutral-500">
+          Say goodbye to silos and hello to smooth data flow across platforms.
+        </p>
+      </article>
+      <article
+        class="flex flex-col items-start sm:mx-auto sm:w-2/3 lg:mx-0 lg:w-4/5 xl:w-2/3"
+      >
+        <figure>
+          <svg
+            class="h-6 text-slate-400 lg:h-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+            data-slot="icon"
+          >
+            <path d="M10.5 18.75a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" />
+            <path
+              fill-rule="evenodd"
+              d="M8.625.75A3.375 3.375 0 0 0 5.25 4.125v15.75a3.375 3.375 0 0 0 3.375 3.375h6.75a3.375 3.375 0 0 0 3.375-3.375V4.125A3.375 3.375 0 0 0 15.375.75h-6.75ZM7.5 4.125C7.5 3.504 8.004 3 8.625 3H9.75v.375c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125V3h1.125c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-6.75A1.125 1.125 0 0 1 7.5 19.875V4.125Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </figure>
+        <div
+          class="mt-4 font-bold text-neutral-700 md:text-lg lg:mt-6 xl:text-xl"
+        >
+          Intuitive User Interface
+        </div>
+        <p class="mt-2 text-sm font-medium text-neutral-500">
+          Designed with you in mind, interface offers a seamless and
+          user-friendly platform.
+        </p>
+      </article>
+      <article
+        class="flex flex-col items-start sm:mx-auto sm:w-2/3 lg:mx-0 lg:w-4/5 xl:w-2/3"
+      >
+        <figure>
+          <svg
+            class="h-6 text-slate-400 lg:h-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+            data-slot="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.25 13.5a8.25 8.25 0 0 1 8.25-8.25.75.75 0 0 1 .75.75v6.75H18a.75.75 0 0 1 .75.75 8.25 8.25 0 0 1-16.5 0Z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M12.75 3a.75.75 0 0 1 .75-.75 8.25 8.25 0 0 1 8.25 8.25.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75V3Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </figure>
+        <div
+          class="mt-4 font-bold text-neutral-700 md:text-lg lg:mt-6 xl:text-xl"
+        >
+          Dynamic Reporting
+        </div>
+        <p class="mt-2 text-sm font-medium text-neutral-500">
+          Watch your information come to life as our feature translates raw data
+          into interactive visual narratives.
+        </p>
+      </article>
+      <article
+        class="flex flex-col items-start sm:mx-auto sm:w-2/3 lg:mx-0 lg:w-4/5 xl:w-2/3"
+      >
+        <figure>
+          <svg
+            class="h-6 text-slate-400 lg:h-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+            data-slot="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </figure>
+        <div
+          class="mt-4 font-bold text-neutral-700 md:text-lg lg:mt-6 xl:text-xl"
+        >
+          Effortless Migration
+        </div>
+        <p class="mt-2 text-sm font-medium text-neutral-500">
+          Leave behind the complexities and embrace a new chapter hassle-free.
+        </p>
+      </article>
+      <article
+        class="flex flex-col items-start sm:mx-auto sm:w-2/3 lg:mx-0 lg:w-4/5 xl:w-2/3"
+      >
+        <figure>
+          <svg
+            class="h-6 text-slate-400 lg:h-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+            data-slot="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634Zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866Zm2.023 6.828a.75.75 0 1 0-1.06-1.06 3.75 3.75 0 0 1-5.304 0 .75.75 0 0 0-1.06 1.06 5.25 5.25 0 0 0 7.424 0Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </figure>
+        <div
+          class="mt-4 font-bold text-neutral-700 md:text-lg lg:mt-6 xl:text-xl"
+        >
+          Expert Consultation
+        </div>
+        <p class="mt-2 text-sm font-medium text-neutral-500">
+          Experienced advisors are here to provide you with personalized
+          guidance every step of the way.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Powerful Features Built for Content Success
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Everything you need to create, optimize, and scale high-performing web content that drives measurable business results.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: SEO Content Briefs -->
+                <div class="card-hover bg-white border border-gray-200 rounded-xl p-8 shadow-md">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-file-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">SEO Content Briefs</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Get AI-powered content briefs that combine keyword research, competitor analysis, and audience insights. Our intelligent system analyzes top-ranking content and generates comprehensive briefs that give your writers everything they need to create search-optimized content that ranks.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Keyword research integration</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Competitor analysis included</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Topic clustering</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Content structure recommendations</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Strategy Sprint -->
+                <div class="card-hover bg-white border border-gray-200 rounded-xl p-8 shadow-md">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Strategy Sprint</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Accelerate your content planning with our intensive strategy sprint. In just days, we'll audit your current content, identify high-impact opportunities, and create a prioritized roadmap. Perfect for teams looking to align on strategy and hit the ground running with proven tactics.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Content audit & analysis</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Opportunity identification</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>12-month content roadmap</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Team alignment workshops</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: AI-Assisted Copy -->
+                <div class="card-hover bg-white border border-gray-200 rounded-xl p-8 shadow-md">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI-Assisted Copy</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Leverage advanced AI technology to accelerate your writing process without sacrificing quality. Our AI assistant helps you generate first drafts, refine messaging, and maintain brand voice consistency across all your content. Perfect for scaling your content production.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Brand voice templates</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Tone & style customization</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Bulk content generation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Human-in-the-loop editing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Why Teams Choose Our Platform
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Experience measurable improvements in your content performance and team productivity with our proven methodology.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Benefit 1: Test-Driven Content -->
+                <div class="card-hover bg-white rounded-xl p-8 shadow-md border-l-4 border-blue-600">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-flask text-white text-lg"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Test-Driven Content</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Move beyond guesswork with our data-driven testing framework. Every piece of content is optimized based on real performance metrics and user behavior. A/B test headlines, CTAs, and messaging to continuously improve conversion rates and engagement.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-arrow-up text-green-500 mr-3 font-bold"></i>
+                            <span>45% average improvement in CTR</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-arrow-up text-green-500 mr-3 font-bold"></i>
+                            <span>3x increase in conversions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Faster Publishing -->
+                <div class="card-hover bg-white rounded-xl p-8 shadow-md border-l-4 border-purple-600">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-rocket text-white text-lg"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Faster Publishing</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Reduce time-to-publish by up to 60% with our streamlined workflow. From ideation to publication, our platform automates the tedious tasks and keeps your team focused on creating great content. Publish more frequently without burning out your team.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-clock text-green-500 mr-3 font-bold"></i>
+                            <span>60% faster production cycle</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-clock text-green-500 mr-3 font-bold"></i>
+                            <span>Publish 3x more content weekly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Repeatable Workflows -->
+                <div class="card-hover bg-white rounded-xl p-8 shadow-md border-l-4 border-indigo-600">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-cogs text-white text-lg"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Repeatable Workflows</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Build standardized processes that scale with your team. Create templates, workflows, and playbooks that ensure consistency across all content. Onboard new team members faster and maintain quality standards as you grow.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 mr-3 font-bold"></i>
+                            <span>Consistent brand voice</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 mr-3 font-bold"></i>
+                            <span>Reduced training time by 75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Loved by Marketing Teams Everywhere
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    See how companies are transforming their content strategy and driving real business results with our platform.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-white rounded-xl p-8 shadow-md border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "This platform completely transformed how we approach content. We've increased our organic traffic by 280% in just 6 months. The SEO briefs alone are worth it."
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">Sarah Chen</p>
+                        <p class="text-gray-600 text-sm">Content Director, TechFlow Inc.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-white rounded-xl p-8 shadow-md border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "We cut our content production time in half and improved our conversion rate by 3.2x. The AI-assisted copy feature is a game-changer for our small team."
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">Marcus Johnson</p>
+                        <p class="text-gray-600 text-sm">Marketing Manager, Growth Labs</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-white rounded-xl p-8 shadow-md border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "The strategy sprint was invaluable. We went from scattered content efforts to a cohesive, data-backed strategy. Our ROI on content marketing has tripled."
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">Emma Rodriguez</p>
+                        <p class="text-gray-600 text-sm">VP Marketing, Digital Solutions Co.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-white rounded-xl p-8 shadow-md border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "Best investment we've made for our content team. The workflows keep everyone aligned, and we're publishing quality content faster than ever before. Highly recommended!"
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">David Kim</p>
+                        <p class="text-gray-600 text-sm">Founder, Creative Ventures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    About Website Marketing HQ
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="bg-gradient-to-br from-blue-400 to-indigo-600 rounded-2xl shadow-xl h-96 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-building text-6xl mb-4 opacity-80"></i>
+                            <p class="text-lg font-semibold">Building Better Content Strategies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Website Marketing HQ was founded in 2018 by a team of content strategists, SEO experts, and marketing technologists who were frustrated with how fragmented the content creation process had become. We realized that teams were spending more time managing tools and processes than actually creating great content. That's when we decided to build a better solution. Starting with a small group of beta customers, we've grown to serve hundreds of companies across industries, from ambitious startups to Fortune 500 enterprises. Our platform is built on the collective wisdom of our customers and the latest advances in AI and content science.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Our mission is simple: empower marketing teams to create content that drives real business results. We believe that great content starts with strategy, is powered by data, and is executed with precision. We're committed to building tools that respect your team's creativity while amplifying their impact. Every feature we build, every update we release, is guided by our core values: obsessive focus on customer success, relentless commitment to data-driven decisions, and unwavering dedication to making content marketing more accessible and effective for everyone.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 md:py-32 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+                    Ready to Transform Your Content Strategy?
+                </h2>
+                <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Join hundreds of marketing teams who are already seeing remarkable results. Start with a free strategy consultation today.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://websitemarketinghq.com/contact" class="px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300 hover:shadow-lg hover:scale-105 text-center">
+                        <i class="fas fa-calendar mr-2"></i>Schedule Your Free Consultation
+                    </a>
+                    <button class="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:shadow-lg hover:scale-105">
+                        <i class="fas fa-download mr-2"></i>Download Strategy Guide
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Everything you need to know about our platform and how it can help your team succeed.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors duration-300 p-6 flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">How quickly will I see results from using your platform?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-blue-600"></i>
+                    </div>
+                    <div class="faq-answer hidden bg-white p-6 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Most teams see measurable improvements within 2-4 weeks. With our SEO content briefs, you'll immediately have better-informed content strategy. Within 30 days, you should see improved search rankings and engagement metrics. Our AI-assisted copy features can boost productivity immediately, while the full impact of your optimized content strategy typically compounds over 3-6 months as more content is published and begins ranking. We've seen customers achieve 300% traffic increases within 6 months of implementation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors duration-300 p-6 flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Can your platform integrate with our existing tools and workflows?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-blue-600"></i>
+                    </div>
+                    <div class="faq-answer hidden bg-white p-6 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely! Our platform integrates seamlessly with popular tools including WordPress, HubSpot, Slack, Asana, Monday.com, and many others. We offer both native integrations and API access for custom connections. Our team can help you set up integrations that match your existing workflow, so you don't have to change how you work. We also support importing and exporting data in multiple formats, making it easy to bring in your existing content and export reports for analysis.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors duration-300 p-6 flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">Is our content data secure and private on your platform?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-blue-600"></i>
+                    </div>
+                    <div class="faq-answer hidden bg-white p-6 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Security is our top priority. All data is encrypted both in transit and at rest using industry-standard AES-256 encryption. We're SOC 2 Type II certified and comply with GDPR, CCPA, and other privacy regulations. Your content remains your property—we never use it to train AI models or share it with third parties. We perform regular security audits, maintain automated backups, and have a dedicated security team. You can also implement single sign-on (SSO) and control user permissions at a granular level.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors duration-300 p-6 flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">What kind of training and support do you provide?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-blue-600"></i>
+                    </div>
+                    <div class="faq-answer hidden bg-white p-6 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            We provide comprehensive onboarding including a personalized strategy session, team training workshops, and detailed documentation. Every customer gets access to our knowledge base with video tutorials and best practice guides. We offer live chat support, email support, and scheduled calls with our success team. For enterprise customers, we assign a dedicated success manager who works with you to maximize ROI. We also host monthly webinars on content strategy, platform features, and industry best practices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors duration-300 p-6 flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-gray-900">How is your pricing structured, and what's included in each plan?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-blue-600"></i>
+                    </div>
+                    <div class="faq-answer hidden bg-white p-6 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            We offer flexible pricing based on your team size and needs. Our Starter plan is perfect for small teams, including core features like SEO content briefs and basic AI-assisted copy. Our Professional plan adds advanced analytics, custom workflows, and priority support. Our Enterprise plan includes everything plus dedicated support, custom integrations, and advanced security features. We don't charge per piece of content—you get unlimited content production. We offer a 14-day free trial so you can explore all features, and we're happy to create a custom plan for your specific requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-chart-line text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">Website Marketing HQ</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Transforming how teams create, optimize, and scale content that drives real business results.
+                    </p>
+                    <div class="flex space-x-4 pt-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-blue-600 transition-colors duration-300 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-blue-600 transition-colors duration-300 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-blue-600 transition-colors duration-300 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-blue-600 transition-colors duration-300 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Column -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Product</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Security</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Roadmap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Partners</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">GDPR</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="border-t border-gray-800 pt-8 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-white"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm">Email us</p>
+                            <a href="mailto:hello@websitemarketinghq.com" class="text-white font-semibold hover:text-blue-400 transition-colors duration-300">hello@websitemarketinghq.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-white"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm">Call us</p>
+                            <a href="tel:+1-800-123-4567" class="text-white font-semibold hover:text-blue-400 transition-colors duration-300">+1 (800) 123-4567</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm">Visit us</p>
+                            <p class="text-white font-semibold">San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    &copy; 2025 Website Marketing HQ. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="privacy.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Privacy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Terms</a>
+                    <a href="blog.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Blog</a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle - FIXED VERSION
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon');
+                
+                if (question && answer && icon) {
+                    question.addEventListener('click', () => {
+                        const isCurrentlyOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all FAQ items first
+                        faqItems.forEach(otherItem => {
+                            const otherAnswer = otherItem.querySelector('.faq-answer');
+                            const otherIcon = otherItem.querySelector('.faq-icon');
+                            
+                            if (otherAnswer) {
+                                otherAnswer.classList.add('hidden');
+                            }
+                            if (otherIcon) {
+                                otherIcon.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // If this item wasn't open, open it
+                        if (!isCurrentlyOpen) {
+                            answer.classList.remove('hidden');
+                            icon.classList.add('rotate-180');
+                        }
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Announcement Bar Close Button
+            const closeButton = document.getElementById('closeAnnouncementBar');
+            const announcementBar = closeButton?.closest('section');
+            
+            if (closeButton && announcementBar) {
+                closeButton.addEventListener('click', () => {
+                    announcementBar.style.display = 'none';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

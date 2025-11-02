@@ -1,0 +1,1034 @@
+/* ========================================
+   WEBSITE MARKETING HQ - ATTENTIVE STYLE
+   ======================================== */
+
+/* Import Attentive Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+/* CSS Variables - Attentive Design System */
+:root {
+  /* Attentive Brand Colors */
+  --color-primary-yellow: #FFF481;
+  --color-primary-yellow-dark: #FEF391;
+  --color-primary-cream: #FAF7F0;
+  --color-primary-dark: #1A1D22;
+  
+  /* Updated to Attentive Brand Colors */
+  --color-orange: #FFF481;
+  --color-blue: #1A1D22;
+  --color-blue-dark: #000000;
+  --color-blue-light: #FBF6EF;
+  
+  /* Accent Colors */
+  --color-accent-green: #7EC96C;
+  --color-accent-red: #E74C3C;
+  
+  /* Neutral Colors */
+  --color-black: #000000;
+  --color-gray-900: #1A1D22;
+  --color-gray-800: #2A2D32;
+  --color-gray-700: #3A3D42;
+  --color-gray-600: #5A5D62;
+  --color-gray-500: #7A7D82;
+  --color-gray-400: #999999;
+  --color-gray-300: #B9B9B9;
+  --color-gray-200: #E8E9EA;
+  --color-gray-100: #F5F5F6;
+  --color-white: #FFFFFF;
+  
+  /* Text Colors */
+  --text-primary: #000000;
+  --text-secondary: #5A5D62;
+  --text-muted: #999999;
+  
+  /* Background Colors */
+  --bg-primary: #FAF7F0;
+  --bg-cream: #FAF7F0;
+  --bg-light-cream: #FBF6EF;
+  --bg-white: #FFFFFF;
+  --bg-dark: #1A1D22;
+  --bg-accent: #FFF481;
+  --bg-card: #FFFFFF;
+  
+  /* Typography */
+  --font-primary: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  --font-secondary: 'Roboto', 'Arial', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.25rem;      /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+  --text-3xl: 1.875rem;    /* 30px */
+  --text-4xl: 2.25rem;     /* 36px */
+  --text-5xl: 3rem;        /* 48px */
+  --text-6xl: 3.75rem;     /* 60px */
+  
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  
+  /* Spacing */
+  --space-1: 0.25rem;      /* 4px */
+  --space-2: 0.5rem;       /* 8px */
+  --space-3: 0.75rem;      /* 12px */
+  --space-4: 1rem;         /* 16px */
+  --space-5: 1.25rem;      /* 20px */
+  --space-6: 1.5rem;       /* 24px */
+  --space-8: 2rem;         /* 32px */
+  --space-10: 2.5rem;      /* 40px */
+  --space-12: 3rem;        /* 48px */
+  --space-16: 4rem;        /* 64px */
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;    /* 4px */
+  --radius-md: 0.5rem;     /* 8px */
+  --radius-lg: 0.75rem;    /* 12px */
+  --radius-xl: 1rem;       /* 16px */
+  --radius-2xl: 1.5rem;    /* 24px */
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-black);
+  background-color: var(--bg-cream);
+}
+
+/* Override Tailwind body classes */
+body.bg-white {
+  background-color: var(--bg-cream) !important;
+}
+
+body.text-gray-900 {
+  color: var(--color-black) !important;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+  color: var(--color-black);
+  margin-bottom: var(--space-4);
+}
+
+h1 {
+  font-size: var(--text-5xl);
+  font-weight: var(--font-extrabold);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+}
+
+h3 {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-semibold);
+}
+
+h4 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+}
+
+h5 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-medium);
+}
+
+h6 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+}
+
+p {
+  margin-bottom: var(--space-4);
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+p.text-secondary,
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+p.text-muted,
+.text-muted {
+  color: var(--text-muted);
+}
+
+a {
+  color: var(--color-black);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-gray-600);
+}
+
+/* Gradient Text Utility - Attentive Style */
+.gradient-text {
+  background: linear-gradient(135deg, #FFF481 0%, #1A1D22 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ========================================
+   BUTTON STYLES (Enhanced with Attentive)
+   ======================================== */
+
+/* Base Button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  line-height: 1.5;
+  text-align: center;
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+}
+
+/* Primary Button - Attentive Yellow */
+.btn-primary {
+  padding: 0.75rem 2rem;
+  background-color: var(--color-primary-yellow);
+  color: var(--color-black);
+  font-weight: 600;
+  border-radius: var(--radius-lg);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-yellow-dark);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+/* Secondary Button - Attentive Dark Style */
+.btn-secondary {
+  padding: 0.75rem 2rem;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-weight: 600;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-black);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+/* Attentive-Style Yellow Button */
+.btn-attentive {
+  padding: var(--space-3) var(--space-6);
+  background-color: var(--color-primary-yellow);
+  color: var(--color-black);
+  font-weight: var(--font-semibold);
+  border-radius: var(--radius-lg);
+  border: none;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.btn-attentive:hover {
+  background-color: var(--color-primary-yellow-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Outline Button */
+.btn-outline {
+  padding: var(--space-3) var(--space-6);
+  background-color: transparent;
+  color: var(--color-black);
+  font-weight: var(--font-semibold);
+  border: 2px solid var(--color-black);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+/* Button Sizes */
+.btn-large {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--text-lg);
+  border-radius: var(--radius-xl);
+}
+
+.btn-small {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  border-radius: var(--radius-md);
+}
+
+/* ========================================
+   CARDS & CONTAINERS
+   ======================================== */
+
+/* Card Hover Effect (Your Original - Enhanced) */
+.card-hover {
+  transition: all 0.3s ease;
+  border-radius: var(--radius-xl);
+}
+
+.card-hover:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+/* Attentive-Style Card */
+.card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-4px);
+}
+
+.card-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-lg);
+}
+
+/* ========================================
+   FAQ ACCORDION (Your Original - Enhanced)
+   ======================================== */
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
+}
+
+.faq-item {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  margin-bottom: var(--space-3);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.faq-item:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* ========================================
+   IMAGES & MEDIA
+   ======================================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Only apply border-radius to images that need it, not logos */
+section img,
+article img,
+.card img {
+  border-radius: var(--radius-lg);
+}
+
+/* Logo should have no border-radius and always display */
+header img,
+nav img {
+  border-radius: 0 !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Specific logo styling */
+header img[src*="logo"],
+nav img[src*="logo"] {
+  max-height: 2.5rem;
+  height: 2.5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.img-rounded {
+  border-radius: var(--radius-xl);
+}
+
+.img-rounded-full {
+  border-radius: var(--radius-full);
+}
+
+/* ========================================
+   SECTIONS & LAYOUT
+   ======================================== */
+
+.section {
+  padding: var(--space-16) var(--space-6);
+  background-color: var(--bg-cream);
+}
+
+.section-cream {
+  background-color: var(--bg-cream);
+}
+
+.section-light-cream {
+  background-color: var(--bg-light-cream);
+}
+
+.section-white {
+  background-color: var(--bg-white);
+}
+
+.section-dark {
+  background-color: var(--bg-dark);
+  color: var(--color-white);
+}
+
+.section-yellow {
+  background-color: var(--color-primary-yellow);
+  color: var(--color-black);
+}
+
+/* Override Tailwind section backgrounds */
+section.bg-white {
+  background-color: var(--bg-white) !important;
+}
+
+section.bg-gray-50 {
+  background-color: var(--bg-cream) !important;
+}
+
+section.py-20,
+section.py-16 {
+  background-color: var(--bg-cream);
+}
+
+section.bg-slate-50 {
+  background-color: var(--bg-light-cream) !important;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.container-narrow {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+/* ========================================
+   FORMS & INPUTS
+   ======================================== */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  background-color: var(--bg-white);
+  border: 2px solid var(--color-gray-300);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-black);
+  box-shadow: 0 0 0 3px rgba(255, 244, 129, 0.3);
+}
+
+.form-group {
+  margin-bottom: var(--space-4);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-weight: var(--font-medium);
+  color: var(--color-black);
+}
+
+/* ========================================
+   BADGES & TAGS
+   ======================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-yellow);
+  color: var(--color-black);
+}
+
+.badge-dark {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.badge-green {
+  background-color: var(--color-accent-green);
+  color: var(--color-white);
+}
+
+.badge-orange {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+nav {
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-link {
+  padding: var(--space-4);
+  font-weight: var(--font-medium);
+  color: var(--color-black);
+  transition: color var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--color-gray-600);
+}
+
+.nav-link.active {
+  color: var(--color-black);
+  font-weight: var(--font-semibold);
+}
+
+/* ========================================
+   ICONS & ICON BACKGROUNDS
+   ======================================== */
+
+.icon-bg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary-yellow);
+  color: var(--color-black);
+  transition: all var(--transition-base);
+}
+
+.icon-bg-large {
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--radius-xl);
+}
+
+.icon-bg-small {
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-md);
+}
+
+.icon-bg-white {
+  background-color: var(--bg-white);
+  color: var(--color-black);
+  box-shadow: var(--shadow-sm);
+}
+
+.icon-bg-dark {
+  background-color: var(--bg-dark);
+  color: var(--color-white);
+}
+
+.icon-bg-green {
+  background-color: var(--color-accent-green);
+  color: var(--color-white);
+}
+
+.icon-bg:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-md);
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-bold {
+  font-weight: var(--font-bold);
+}
+
+.font-semibold {
+  font-weight: var(--font-semibold);
+}
+
+.text-black {
+  color: var(--color-black);
+}
+
+.text-gray {
+  color: var(--color-gray-600);
+}
+
+.text-gray-dark {
+  color: var(--text-secondary);
+}
+
+.text-gray-light {
+  color: var(--text-muted);
+}
+
+.text-dark {
+  color: var(--color-gray-900);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.bg-yellow {
+  background-color: var(--color-primary-yellow);
+  color: var(--color-black);
+}
+
+.bg-cream {
+  background-color: var(--bg-cream);
+}
+
+.bg-light-cream {
+  background-color: var(--bg-light-cream);
+}
+
+.bg-white {
+  background-color: var(--bg-white);
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+  color: var(--color-white);
+}
+
+.rounded {
+  border-radius: var(--radius-lg);
+}
+
+.rounded-xl {
+  border-radius: var(--radius-xl);
+}
+
+.rounded-full {
+  border-radius: var(--radius-full);
+}
+
+.shadow {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* ========================================
+   COMPONENT-SPECIFIC OVERRIDES
+   ======================================== */
+
+/* Header/Navigation - white on cream background */
+header {
+  background-color: var(--bg-white) !important;
+  box-shadow: var(--shadow-sm);
+}
+
+header nav {
+  background-color: transparent !important;
+}
+
+/* Logo/brand icon background */
+.w-10.h-10.bg-blue-600,
+.w-12.h-12.bg-blue-600 {
+  background-color: var(--color-primary-yellow) !important;
+}
+
+.w-12.h-12.bg-purple-600 {
+  background-color: var(--bg-dark) !important;
+}
+
+.w-12.h-12.bg-indigo-600 {
+  background-color: var(--color-primary-yellow) !important;
+}
+
+/* Hero section gradient background */
+.bg-gradient-to-br {
+  background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-light-cream) 100%) !important;
+}
+
+/* Stats numbers in hero */
+.text-3xl.font-bold.text-blue-600 {
+  color: var(--color-black) !important;
+}
+
+/* Feature/benefit cards with colored borders */
+.border-l-4 {
+  border-left-width: 4px;
+}
+
+.border-l-4.border-blue-600 {
+  border-left-color: var(--color-primary-yellow) !important;
+}
+
+.border-l-4.border-purple-600 {
+  border-left-color: var(--color-primary-yellow) !important;
+}
+
+.border-l-4.border-indigo-600 {
+  border-left-color: var(--color-primary-yellow) !important;
+}
+
+/* Star ratings - keep yellow */
+.text-yellow-400 {
+  color: #FFF481 !important;
+}
+
+/* Footer social icons */
+footer .bg-gray-800:hover {
+  background-color: var(--color-primary-yellow) !important;
+}
+
+footer .hover\:bg-blue-600:hover {
+  background-color: var(--color-primary-yellow) !important;
+}
+
+/* CTA section buttons */
+.bg-blue-600.text-white {
+  background-color: var(--color-primary-yellow) !important;
+  color: var(--color-black) !important;
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: var(--color-primary-yellow-dark) !important;
+}
+
+.bg-white.text-blue-600 {
+  background-color: var(--bg-white) !important;
+  color: var(--color-black) !important;
+  border: 2px solid var(--color-black);
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: var(--bg-light-cream) !important;
+}
+
+/* Green checkmarks - keep as accent */
+.text-green-500 {
+  color: var(--color-accent-green) !important;
+}
+
+/* Icon backgrounds in feature cards */
+.w-16.h-16 {
+  transition: all var(--transition-base);
+}
+
+/* FAQ items */
+.bg-gray-50 {
+  background-color: var(--bg-white) !important;
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: var(--bg-light-cream) !important;
+}
+
+/* Border colors */
+.border-gray-200 {
+  border-color: var(--color-gray-200);
+}
+
+.border-gray-300 {
+  border-color: var(--color-gray-300);
+}
+
+.border-t.border-gray-300 {
+  border-top-color: var(--color-gray-300);
+}
+
+/* ========================================
+   TAILWIND OVERRIDES FOR ATTENTIVE STYLE
+   ======================================== */
+
+/* Override Tailwind blue colors with Attentive yellow/black */
+.bg-blue-50 {
+  background-color: var(--bg-light-cream) !important;
+}
+
+.bg-blue-100 {
+  background-color: var(--color-primary-yellow) !important;
+}
+
+.bg-blue-600 {
+  background-color: var(--color-primary-yellow) !important;
+}
+
+.bg-blue-400 {
+  background-color: var(--color-primary-yellow) !important;
+}
+
+.bg-purple-100 {
+  background-color: var(--color-primary-yellow) !important;
+}
+
+.bg-purple-600 {
+  background-color: var(--bg-dark) !important;
+}
+
+.bg-indigo-100 {
+  background-color: var(--color-primary-yellow) !important;
+}
+
+.bg-indigo-600 {
+  background-color: var(--bg-dark) !important;
+}
+
+.text-blue-600 {
+  color: var(--color-black) !important;
+}
+
+.text-blue-400 {
+  color: var(--color-black) !important;
+}
+
+.text-purple-600 {
+  color: var(--color-black) !important;
+}
+
+.text-indigo-600 {
+  color: var(--color-black) !important;
+}
+
+.border-blue-600 {
+  border-color: var(--color-primary-yellow) !important;
+}
+
+.border-purple-600 {
+  border-color: var(--color-primary-yellow) !important;
+}
+
+.border-indigo-600 {
+  border-color: var(--color-primary-yellow) !important;
+}
+
+/* Gradient overrides */
+.from-blue-50 {
+  --tw-gradient-from: var(--bg-cream) !important;
+}
+
+.from-blue-400 {
+  --tw-gradient-from: var(--color-primary-yellow) !important;
+}
+
+.to-indigo-100 {
+  --tw-gradient-to: var(--bg-light-cream) !important;
+}
+
+.to-indigo-600 {
+  --tw-gradient-to: var(--bg-dark) !important;
+}
+
+/* Hover states */
+.hover\:bg-blue-600:hover {
+  background-color: var(--color-primary-yellow) !important;
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: var(--color-primary-yellow-dark) !important;
+}
+
+.hover\:bg-blue-800:hover {
+  background-color: var(--bg-dark) !important;
+}
+
+.hover\:text-blue-600:hover {
+  color: var(--text-secondary) !important;
+}
+
+.hover\:text-blue-400:hover {
+  color: var(--text-secondary) !important;
+}
+
+/* Announcement bar and slate colors */
+.bg-slate-100 {
+  background-color: var(--color-primary-yellow) !important;
+}
+
+.bg-slate-900 {
+  background-color: var(--bg-dark) !important;
+}
+
+.hover\:bg-slate-800:hover {
+  background-color: var(--color-black) !important;
+}
+
+/* Gray scale adjustments for Attentive */
+.bg-gray-50 {
+  background-color: var(--bg-cream) !important;
+}
+
+.bg-gray-900 {
+  background-color: var(--bg-dark) !important;
+}
+
+.bg-gray-800 {
+  background-color: var(--color-gray-800) !important;
+}
+
+.text-gray-700 {
+  color: var(--color-black) !important;
+}
+
+.text-gray-600 {
+  color: var(--text-secondary) !important;
+}
+
+.text-gray-400 {
+  color: var(--text-muted) !important;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --text-5xl: 2.25rem;
+    --text-4xl: 1.875rem;
+    --text-3xl: 1.5rem;
+  }
+  
+  .section {
+    padding: var(--space-12) var(--space-4);
+  }
+  
+  .btn-large {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-base);
+  }
+  
+  .btn-primary,
+  .btn-secondary,
+  .btn-attentive {
+    padding: 0.625rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: var(--text-4xl);
+  }
+  
+  .card {
+    padding: var(--space-4);
+  }
+  
+  .container,
+  .container-narrow {
+    padding: 0 var(--space-4);
+  }
+}
