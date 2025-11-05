@@ -9,6 +9,7 @@
     <title>Mastering AI-Powered Content Creation: A Complete Strategy Guide</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
     <style>
         html {
             scroll-behavior: smooth;
@@ -19,17 +20,15 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        .btn-primary {
-            @apply px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300 hover:shadow-lg hover:scale-105;
-        }
-        .btn-secondary {
-            @apply px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300 hover:shadow-lg hover:scale-105;
-        }
         .card-hover {
-            @apply transition-all duration-300 hover:shadow-xl hover:scale-105;
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transform: scale(1.05);
         }
         .faq-icon {
-            @apply transition-transform duration-300;
+            transition: transform 0.3s ease;
         }
     </style>
 </head>
@@ -38,13 +37,11 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
-                <a href="https://websitemarketinghq.com" class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                        <i class="fas fa-chart-line text-white text-lg"></i>
-                    </div>
-                    <span class="text-xl font-bold text-gray-900">Website Marketing HQ</span>
+                <a href="../index.html" class="flex items-center gap-3">
+                    <img src="../images/WMHQ-ICON.webp" alt="WMHQ Icon" class="h-10 w-10">
+                    <img src="../images/logo.png" alt="Website Marketing HQ Logo" class="h-10 w-auto max-w-xs">
                 </a>
-                <a href="https://websitemarketinghq.com/blog.html" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">
+                <a href="../blog.html" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">
                     ← Back
                 </a>
             </div>
@@ -212,7 +209,7 @@
             <div class="bg-blue-50 border-l-4 border-blue-600 p-6 mt-8 rounded">
                 <p class="text-gray-700 font-semibold mb-2">Ready to transform your content strategy with AI?</p>
                 <p class="text-gray-700 mb-4">Website Marketing HQ can help you implement AI-powered content creation that drives real results. Our platform combines AI-assisted content generation with strategic frameworks that ensure quality, authenticity, and business impact.</p>
-                <a href="https://websitemarketinghq.com/contact" class="btn-primary inline-block">
+                <a href="https://websitemarketinghq.com/contact" class="btn-primary inline-block text-center">
                     <i class="fas fa-rocket mr-2"></i>Start Your AI Content Strategy
                 </a>
             </div>
@@ -225,11 +222,8 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <!-- Brand Column -->
                 <div class="space-y-4">
-                    <div class="flex items-center space-x-2 mb-4">
-                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-chart-line text-white text-lg"></i>
-                        </div>
-                        <span class="text-xl font-bold text-white">Website Marketing HQ</span>
+                    <div class="flex items-center mb-4">
+                        <img src="../images/wmhq-logo-wht-trnspt.png" alt="Website Marketing HQ Logo" class="h-8 w-auto">
                     </div>
                     <p class="text-gray-400 leading-relaxed">
                         Transforming how teams create, optimize, and scale content that drives real business results.
@@ -254,8 +248,8 @@
                 <div>
                     <h4 class="text-white font-bold text-lg mb-6">Product</h4>
                     <ul class="space-y-3">
-                        <li><a href="https://websitemarketinghq.com#features" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Features</a></li>
-                        <li><a href="https://websitemarketinghq.com#benefits" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="../index.html#features" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Features</a></li>
+                        <li><a href="../index.html#benefits" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Benefits</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Pricing</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Security</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Roadmap</a></li>
@@ -267,7 +261,7 @@
                     <h4 class="text-white font-bold text-lg mb-6">Company</h4>
                     <ul class="space-y-3">
                         <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">About Us</a></li>
-                        <li><a href="https://websitemarketinghq.com/blog.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="../blog.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Blog</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Careers</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Contact</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Partners</a></li>
@@ -278,8 +272,8 @@
                 <div>
                     <h4 class="text-white font-bold text-lg mb-6">Legal</h4>
                     <ul class="space-y-3">
-                        <li><a href="https://websitemarketinghq.com/privacy.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="https://websitemarketinghq.com/terms.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="../privacy.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="../terms.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Terms of Service</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Cookie Policy</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">GDPR</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Accessibility</a></li>
@@ -291,17 +285,17 @@
             <div class="border-t border-gray-800 pt-8 mb-8">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                            <i class="fas fa-envelope text-white"></i>
+                        <div class="w-12 h-12 bg-yellow rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-gray-900"></i>
                         </div>
                         <div>
                             <p class="text-gray-400 text-sm">Email us</p>
-                            <a href="/cdn-cgi/l/email-protection#39515c555556794e5c5b4a504d5c54584b525c4d50575e5148175a5654" class="text-white font-semibold hover:text-blue-400 transition-colors duration-300"><span class="__cf_email__" data-cfemail="f9919c959596b98e9c9b8a908d9c94988b929c8d90979e9188d79a9694">[email&#160;protected]</span></a>
+                            <a href="mailto:hello@websitemarketinghq.com" class="text-white font-semibold hover:text-blue-400 transition-colors duration-300">hello@websitemarketinghq.com</a>
                         </div>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                            <i class="fas fa-phone text-white"></i>
+                        <div class="w-12 h-12 bg-yellow rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-gray-900"></i>
                         </div>
                         <div>
                             <p class="text-gray-400 text-sm">Call us</p>
@@ -309,8 +303,8 @@
                         </div>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                            <i class="fas fa-map-marker-alt text-white"></i>
+                        <div class="w-12 h-12 bg-yellow rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-gray-900"></i>
                         </div>
                         <div>
                             <p class="text-gray-400 text-sm">Visit us</p>
@@ -326,9 +320,9 @@
                     &copy; 2025 Website Marketing HQ. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="https://websitemarketinghq.com/privacy.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Privacy</a>
-                    <a href="https://websitemarketinghq.com/terms.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Terms</a>
-                    <a href="https://websitemarketinghq.com/blog.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Blog</a>
+                    <a href="../privacy.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Privacy</a>
+                    <a href="../terms.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Terms</a>
+                    <a href="../blog.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Blog</a>
                     <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Sitemap</a>
                 </div>
             </div>
@@ -336,7 +330,8 @@
     </footer>
 
     <!-- JavaScript -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Smooth Scroll for Anchor Links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -344,4 +339,17 @@
                     const href = this.getAttribute('href');
                     if (href !== '#' && href.length > 1) {
                         e.preventDefault();
-                        const target = document.querySelector(
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
